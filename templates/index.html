@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="login">
+    <h1>Predict CO2 Emission of vehicle</h1>
+    <h3>Enter the following values to predict the CO2 emission from the vehicle</h3>
+
+    <form action="{{ url_for('predict')}}" method="post" >
+        <input type="text" name="First_operand" placeholder="First_operand" required="required">
+       <input type="text" name="Second_operand" placeholder="Second_operand" required="required">
+       <input type="text" name="Third_operand" placeholder="Third_operand" required="required">
+       <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text}}
+
+</div>
+
+</body>
+</html>
